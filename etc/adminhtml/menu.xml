@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/** Hello menu xml
+ * @category  Webkul
+ * @package   Webkul_Hello
+ * @author    Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Webkul_Hello::manager" title="Webkul Menu" module="Webkul_Hello" sortOrder="10" resource="Webkul_Hello::manager"/>
+        <add id="Webkul_Hello::employee" title="Employee Manager" module="Webkul_Hello" sortOrder="0" parent="Webkul_Hello::manager"
+                action="hello/employee" resource="Webkul_Hello::employee"/>
+    </menu>
+</config>
